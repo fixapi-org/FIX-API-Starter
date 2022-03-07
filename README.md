@@ -11,7 +11,7 @@ This is a FIX API based application starter open source repository. We code a ty
 # QuickFIXj Version
 2.3.0
 
-# Demo FIX API Accounts
+# Demo FIX API Accounts (FREE!!)
 
 FXCM provides demo accounts for a long term application.
 
