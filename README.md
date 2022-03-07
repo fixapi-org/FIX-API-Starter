@@ -5,11 +5,13 @@ This is a FIX API based application starter open source repository. We code a ty
 1. Spring boot IDE(Eclipse)
 2. FIX API demo account
 
-# Spring boot version
+# Spring Boot Version
 2.6.4
 
-# QuickFIXj version
+# QuickFIXj Version
 2.3.0
+
+# Demo FIX API Accounts
 
 FXCM provides demo accounts for a long term application.
 
