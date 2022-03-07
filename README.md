@@ -13,7 +13,11 @@ This is a FIX API based application starter open source repository. We code a ty
 
 # Demo FIX API Accounts (FREE!!)
 
-FXCM provides demo accounts for a long term application.
+Usually, if you want to test via a demo FIX API account, the liquidity provider would require you to deposit first.
+
+Thanks to FXCM's help.
+
+FXCM provides us with their demo accounts for a long term application.
 
 If you need a FIX API demo account to test, please contact us: support@fixapi.org to book it.
 
