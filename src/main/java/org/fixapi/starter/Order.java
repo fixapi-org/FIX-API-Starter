@@ -43,7 +43,6 @@ public class Order extends MessageCracker implements Application {
 	private static final Logger logger = LoggerFactory.getLogger(Order.class);
 
 	private boolean resetReq;
-	String mdReqID;
 
 	private String userName;
 	private String userPassword;
