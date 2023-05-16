@@ -107,8 +107,6 @@ public class Data extends MessageCracker implements Application {
 				message.setInt(EncryptMethod.FIELD, EncryptMethod.NONE_OTHER);
 			} else if (message instanceof Logout) {
 				logger.info("Data logged out via toAdmin " + this.userName);
-
-				sendMarketDataRequestList(SubscriptionRequestType.DISABLE_PREVIOUS_SNAPSHOT_UPDATE_REQUEST);
 			}
 		} catch (Exception e) {
 			e.printStackTrace();
@@ -124,6 +122,8 @@ public class Data extends MessageCracker implements Application {
 	}
 
 	public void logout() {
+		sendMarketDataRequestList(SubscriptionRequestType.DISABLE_PREVIOUS_SNAPSHOT_UPDATE_REQUEST);
+
 		Logout mdr = new Logout();
 		send(mdr);
 	}
@@ -136,8 +136,6 @@ public class Data extends MessageCracker implements Application {
 
 	public void onLogout(SessionID sessionID) {
 		logger.warn("Data logged out via onLogout" + (userName == null ? "" : " for " + userName) );
-
-		sendMarketDataRequestList(SubscriptionRequestType.DISABLE_PREVIOUS_SNAPSHOT_UPDATE_REQUEST);
 	}
 
 	private void send(Message message) {
